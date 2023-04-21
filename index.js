@@ -6,8 +6,9 @@ var index = 0;
 var player;
 var bgcolor = "black";
 
+
 class object {
-constructor(e,x,y,w,h,c,t,tc,type) {
+constructor(e,x,y,w,h,c,t,tc,type,img) {
 
 this.context=function(canvas) {
 
@@ -24,14 +25,60 @@ this.w=w;
 this.h=h;
 this.tc=tc;
 this.type = type;
+this.bgcolor = "";
+this.background = "";
 
-this.clear =  function (resource) {
+this.img_obj = {
+  'source': null,
+  'current': 0,
+  'total_frames': 16,
+  'width': 16,
+  'height': 16
+};
 
-  if ( resource ) {
+
+this.animate = function () { // context is the canvas 2d context.
+
+  var iobj = this.img_obj;
+  
+      if (iobj.source != null)
+          this.ctx.drawImage(iobj.source, iobj.current * iobj.width, 0,
+                            iobj.width, iobj.height,
+                            this.x, this.y, this.w, this.h);
+      iobj.current = (iobj.current + 1) % iobj.total_frames;
+                     // incrementing the current frame and assuring animation loop
+ 
+
+}
+
+this.loadResource = function (numFrames) {
+
+  var img = new Image();
+  img.onload = function () { // Triggered when image has finished loading.
+      this.img_obj.source = img;  // we set the image source for our object.
+  }
+  img.src = this.img;
+  this.img_obj.total_frames = numFrames;
+  this.img_obj.width = img.width;
+  this.img_obj.height = img.height;
+
+  setInterval(this.animate,100);
+
+}
+
+
+this.clear =  function (numFrames) {
+
+  if ( this.img )   {
+
+      loadResource(numFrames);
 
   }
 
-  else {
+    else {
+
+
+
 
   this.ctx.fillStyle=bgcolor;
   this.ctx.fillRect(this.x,this.y,this.w,this.h);
@@ -39,24 +86,28 @@ this.clear =  function (resource) {
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 
+    }
+
+}
+
+this.render=function(numFrames) {
+
+  if ( this.img )   {
+
+    loadResource(numFrames);
+
+
   }
 
-}
-
-this.render=function(resource) {
-
-if ( resource ) {
-
-
-}
-else {
+    else {
 
   this.ctx.fillStyle=this.c;
 this.ctx.fillRect(this.x,this.y,this.w,this.h);
 this.ctx.fillStyle=this.tc;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
-}
+
+    }
 
 };
 
@@ -261,7 +312,7 @@ function create() {
         npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
 
 
-        player.move(64,0);
+        player.move(-64,0);
 
 
           npcs[m].render();
@@ -301,7 +352,7 @@ function create() {
          npcs[m].render();
 
   
-          player.move(64,0);
+          player.move(0,64);
   
   
  
@@ -336,7 +387,7 @@ function create() {
         npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
 
 
-        player.move(64,0);
+        player.move(0,-64);
 
 
           npcs[m].render();
@@ -375,12 +426,7 @@ function check1(index,array1,array2,x,y,x2,y2) {
 
   array1[index].move(x,y);
 
-  for ( var m = 0; m < array1.length ; m++ ) {
-
-    if (index == m )
-
-        continue
-
+  for ( var m = 0; m < array2.length ; m++ ) {
 
 
   if (array1[index].bounds(array2[m]) )  {
@@ -410,6 +456,7 @@ function check(array,array2) {
 
 
     check1(index, array,array2, 0, 64, 0, -64);
+    check1(index, array2,array, 0, 64, 0, -64);
 
     check2(index,array,0,-64);
 
@@ -418,6 +465,7 @@ function check(array,array2) {
   if ( chance > 250 && chance < 500 ) {
 
     check1(index, array, array2, 0, -64, 0, 64);
+    check1(index, array2, array, 0, -64, 0, 64);
 
     check2(index,array,0,64);
 
@@ -427,6 +475,7 @@ function check(array,array2) {
   if ( chance > 500 && chance < 750 ) {
 
     check1(index, array,array2, 64,0, -64,0);
+    check1(index, array2,array, 64,0, -64,0);
 
     check2(index,array,-64,0);
 
@@ -434,6 +483,7 @@ function check(array,array2) {
   }
   if ( chance > 750 && chance < 1000 ) {
 
+    check1(index, array2,array, -64,0, 64,0);
     check1(index, array,array2, -64,0, 64,0);
 
     check2(index,array,64,0);
@@ -450,8 +500,7 @@ setInterval(function () {
 
 
 
-  check(npcs,monsters);
-  check(monsters,npcs);
+ check(npcs,monsters);
 
 
   
