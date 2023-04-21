@@ -1,4 +1,10 @@
-
+var monsters = [];
+var npcs = [];
+var unitChance = 5;
+var monsterIndex = 0;
+var npcIndex = 0;
+var player;
+var bgcolor = "black";
 
 class object {
 constructor(e,x,y,w,h,c,t,tc,type) {
@@ -19,23 +25,38 @@ this.h=h;
 this.tc=tc;
 this.type = type;
 
-this.clear =  function (color) {
+this.clear =  function (resource) {
 
-  this.ctx.fillStyle=color;
+  if ( resource ) {
+
+  }
+
+  else {
+
+  this.ctx.fillStyle=bgcolor;
   this.ctx.fillRect(this.x,this.y,this.w,this.h);
-  this.ctx.fillStyle=color;
+  this.ctx.fillStyle=bgcolor;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 
+  }
+
 }
 
-this.render=function() {
+this.render=function(resource) {
 
+if ( resource ) {
+
+
+}
+else {
 
   this.ctx.fillStyle=this.c;
 this.ctx.fillRect(this.x,this.y,this.w,this.h);
 this.ctx.fillStyle=this.tc;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
+
+}
 
 };
 
@@ -96,7 +117,7 @@ this.move=function(x,y) {
 
 
 
-  this.clear("black");
+  this.clear();
 
 
 
@@ -116,12 +137,7 @@ this.worldbounds();
 }
 }
 
-var monsters = [];
-var npcs = [];
-var unitChance = 5;
-var monsterIndex = 0;
-var npcIndex = 0;
-var player;
+
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -129,7 +145,7 @@ function getRandomInt(max) {
 
 function create() {
 
-  var background = new object('canvas',0,0,window.innerWidth,window.innerHeight,'black','Welcome to Aezaria.','yellow',"background");
+  var background = new object('canvas',0,0,window.innerWidth,window.innerHeight,bgcolor,'Welcome to Aezaria.','yellow',"background");
   player = new object('canvas',256,256,64,64,'green','Player','yellow',"player");
 
   background.render();
