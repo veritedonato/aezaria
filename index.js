@@ -104,6 +104,7 @@ this.worldbounds = function () {
 
 this.bounds = function (o) {
 
+
   if ( this.x < o.x + o.w && this.x > o.x - o.w )
   if ( this.y < o.y + o.h && this.y > o.y - o.h )
 
