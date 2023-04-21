@@ -6,6 +6,41 @@ var index = 0;
 var player;
 var bgcolor = "black";
 
+function fire () {
+
+    player.energy -= 25;
+
+    index = getRandomInt(monsters.length);
+
+
+      var spell = new object('canvas',player.x,player.y,64,64,'purple','FIRE','yellow',"fire");
+
+    spell.target(monsters[index]);
+
+    setInterval(function () {
+
+
+        spell.follow();
+
+        if ( spell.bounds(monsters[index]) )
+
+            {
+
+                  monsters[index].health -= 25;
+
+
+                  if (monsters[index].health <= 0 )
+
+                        delete monsters[index];
+
+                clearInterval(this);
+
+            }
+
+    },100);
+
+}
+
 
 class object {
 constructor(e,x,y,w,h,c,t,tc,type,img) {
