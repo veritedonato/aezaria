@@ -2,7 +2,7 @@ var monsters = [];
 var npcs = [];
 var unitChance = 5;
 var monsterIndex = 0;
-var npcIndex = 0;
+var index = 0;
 var player;
 var bgcolor = "black";
 
@@ -116,9 +116,11 @@ this.bounds = function (o) {
 this.move=function(x,y) {
 
 
+  if (this.x == undefined || this.y == undefined)
+
+      return;
 
   this.clear();
-
 
 
   
@@ -354,7 +356,7 @@ function create() {
 
 }
 
-function check2(array,index,x,y) {
+function check2(index,array,x,y) {
 
 if (player.bounds(array[index]) )  {
 
@@ -368,7 +370,7 @@ if (player.bounds(array[index]) )  {
 
 }
 
-function check1(index,array1,array2,x2,y2) {
+function check1(index,array1,array2,x,y,x2,y2) {
 
   array1[index].move(x,y);
 
@@ -378,12 +380,13 @@ function check1(index,array1,array2,x2,y2) {
 
         continue
 
-  if (array[index].bounds(array2[m]) )  {
 
 
-    array[index].move(x2,y2);
+  if (array1[index].bounds(array2[m]) )  {
 
-       array[index].render();
+    array1[index].move(x2,y2);
+
+       array1[index].render();
 
 }
 
@@ -395,7 +398,7 @@ function check1(index,array1,array2,x2,y2) {
 
 function check(array,array2) {
 
- npcIndex = getRandomInt(array.length);
+ index = getRandomInt(array.length);
 
   var chance =  getRandomInt(1000);
 
@@ -405,34 +408,34 @@ function check(array,array2) {
 
 
 
-    check1(npcIndex, array,array2, 0, 64, 0, -64);
+    check1(index, array,array2, 0, 64, 0, -64);
 
-    check2(npcIndex,array,0,-64);
+    check2(index,array,0,-64);
 
 
   }
   if ( chance > 250 && chance < 500 ) {
 
-    check1(npcIndex, array, array2, 0, -64, 0, 64);
+    check1(index, array, array2, 0, -64, 0, 64);
 
-    check2(npcIndex,array,0,64);
+    check2(index,array,0,64);
 
 
   }
 
   if ( chance > 500 && chance < 750 ) {
 
-    check1(npcIndex, array,array2, 64,0, -64,0);
+    check1(index, array,array2, 64,0, -64,0);
 
-    check2(npcIndex,array,-64,0);
+    check2(index,array,-64,0);
 
 
   }
   if ( chance > 750 && chance < 1000 ) {
 
-    check1(npcIndex, array,array2, -64,0, 64,0);
+    check1(index, array,array2, -64,0, 64,0);
 
-    check2(npcIndex,array,64,0);
+    check2(index,array,64,0);
 
 
   }
