@@ -354,6 +354,91 @@ function create() {
 
 }
 
+function check2(array,index,x,y) {
+
+if (player.bounds(array[index]) )  {
+
+
+  array[index].move(x,y);
+
+
+      player.render();
+
+}
+
+}
+
+function check1(index,array1,array2,x2,y2) {
+
+  array1[index].move(x,y);
+
+  for ( var m = 0; m < array1.length ; m++ ) {
+
+    if (index == m )
+
+        continue
+
+  if (array[index].bounds(array2[m]) )  {
+
+
+    array[index].move(x2,y2);
+
+       array[index].render();
+
+}
+
+  }
+
+
+
+}
+
+function check(array,array2) {
+
+ npcIndex = getRandomInt(array.length);
+
+  var chance =  getRandomInt(1000);
+
+
+  if ( chance < 250 ) {
+
+
+
+
+    check1(npcIndex, array,array2, 0, 64, 0, -64);
+
+    check2(npcIndex,array,0,-64);
+
+
+  }
+  if ( chance > 250 && chance < 500 ) {
+
+    check1(npcIndex, array, array2, 0, -64, 0, 64);
+
+    check2(npcIndex,array,0,64);
+
+
+  }
+
+  if ( chance > 500 && chance < 750 ) {
+
+    check1(npcIndex, array,array2, 64,0, -64,0);
+
+    check2(npcIndex,array,-64,0);
+
+
+  }
+  if ( chance > 750 && chance < 1000 ) {
+
+    check1(npcIndex, array,array2, -64,0, 64,0);
+
+    check2(npcIndex,array,64,0);
+
+
+  }
+
+
+}
 
 create();
 setInterval(function () {
@@ -361,244 +446,10 @@ setInterval(function () {
 
 
 
-  npcIndex = getRandomInt(npcs.length);
-
-  var chance =  getRandomInt(1000);
-
-  if ( chance < 250 ) {
-
-    npcs[npcIndex].move(0,-64);
-
-
-  }
-  if ( chance > 250 && chance < 500 ) {
-
-    npcs[npcIndex].move(0,64);
-
-
-  }
-  if ( chance > 500 && chance < 750 ) {
-
-    npcs[npcIndex].move(64,0);
-
-
-  }
-  if ( chance > 750 && chance < 1000 ) {
-
-    npcs[npcIndex].move(-64,0);
-
-
-  }
-
-  monsterIndex = getRandomInt(monsters.length);
-
-  chance =  getRandomInt(1000);
-
-
-  if ( chance < 250 ) {
-
-    monsters[monsterIndex].move(0,-64);
-
-
-    for ( var m = 0; m < monsters.length ; m++ ) {
-
-      if (monsterIndex == m )
-
-      continue
-
-
-      if (monsters[monsterIndex].bounds(monsters[m]) )  {
-
-
-
-        monsters[monsterIndex].move(0,64);
-  
-            monsters[monsterIndex].render();
-  
-  }
-
-      }
-
-      for ( var m = 0; m < npcs.length ; m++ ) {
-  
-  
-        if (monsters[monsterIndex].bounds(npcs[m]) )  {
-  
-  
-  
-          monsters[monsterIndex].move(0,64);
-    
-              monsters[monsterIndex].render();
-    
-    }
-  
-        }
-  
-    if (player.bounds(monsters[monsterIndex]) )  {
-
-
-      monsters[monsterIndex].move(0,64);
-
-          player.render();
-
-}
-
-
-
-  }
-
-  if ( chance > 250 && chance < 500 ) {
-
-      monsters[monsterIndex].move(0,64);
-
-      for ( var m = 0; m < monsters.length ; m++ ) {
-
-          if (monsterIndex == m )
-
-              continue
-
-        if (monsters[monsterIndex].bounds(monsters[m]) )  {
-
-  
-          monsters[monsterIndex].move(0,-64);
-    
-             monsters[monsterIndex].render();
-    
-    }
-  
-        }
-
-        for ( var m = 0; m < npcs.length ; m++ ) {
-  
-  
-          if (monsters[monsterIndex].bounds(npcs[m]) )  {
-    
-    
-    
-            monsters[monsterIndex].move(0,64);
-      
-                monsters[monsterIndex].render();
-      
-      }
-    
-          }
-  
-
-      if (player.bounds(monsters[monsterIndex]) )  {
-
-
-        monsters[monsterIndex].move(0,-64);
-  
-
-            player.render();
-
-  }
-  
-
-  }
-  if ( chance > 500 && chance < 750 ) {
-
-      monsters[monsterIndex].move(64,0);
-
-      for ( var m = 0; m < monsters.length ; m++ ) {
-
-        if (monsterIndex == m )
-
-        continue
-
-
-        if (monsters[monsterIndex].bounds(monsters[m]) )  {
+  check(npcs,monsters);
+  check(monsters,npcs);
 
 
   
-          monsters[monsterIndex].move(-64,0);
-    
-              monsters[monsterIndex].render();
-    
-    }
-  
-        }
 
-        
-        for ( var m = 0; m < npcs.length ; m++ ) {
-  
-  
-          if (monsters[monsterIndex].bounds(npcs[m]) )  {
-    
-    
-    
-            monsters[monsterIndex].move(0,64);
-      
-                monsters[monsterIndex].render();
-      
-      }
-    
-          }
-  
-
-      if (player.bounds(monsters[monsterIndex]) )  {
-
-
-        monsters[monsterIndex].move(-64,0);
-
-            player.render();
-  
-  }
-  
-
-  }
-
-  if ( chance > 750 && chance < 1000 ) {
-
-
-    monsters[monsterIndex].move(-64,0);
-
-    for ( var m = 0; m < monsters.length ; m++ ) {
-
-      if (monsterIndex == m )
-
-      continue
-
-      if (monsters[monsterIndex].bounds(monsters[m]) )  {
-
-
-        monsters[monsterIndex].move(64,0);
-  
-            monsters[monsterIndex].render();
-  
-  }
-
-      }
-
-      for ( var m = 0; m < npcs.length ; m++ ) {
-  
-  
-        if (monsters[monsterIndex].bounds(npcs[m]) )  {
-  
-  
-  
-          monsters[monsterIndex].move(0,64);
-    
-              monsters[monsterIndex].render();
-    
-    }
-  
-        }
-
-
-    if (player.bounds(monsters[monsterIndex]) )  {
-
-
-      monsters[monsterIndex].move(64,0);
-
-
-        player.render();
-
-}
-
-
-  }
-
-  
-
-},100);
+},250);
