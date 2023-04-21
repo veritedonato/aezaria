@@ -1,3 +1,5 @@
+var spelldef = ["FIRE","ICE","BOLT","STORM","SLEEP","FREEZE"];
+var spells = [];
 var monsters = [];
 var npcs = [];
 var unitChance = 5;
@@ -27,6 +29,9 @@ this.tc=tc;
 this.type = type;
 this.bgcolor = "";
 this.background = "";
+this.targetEntity = null;
+this.health = 1000;
+this.energy = 1000;
 
 this.img_obj = {
   'source': null,
@@ -104,6 +109,13 @@ this.render=function() {
 this.ctx.fillRect(this.x,this.y,this.w,this.h);
 this.ctx.fillStyle=this.tc;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
+
+      if ( this.type != "background") {
+
+this.ctx.fillStyle=this.tc;
+this.ctx.fillText("Health: " + this.health,this.x+10,this.y+25);
+
+      }
 
 
     }
@@ -186,6 +198,30 @@ this.worldbounds();
 
 };
 
+this.target = function (o) {
+
+    this.targetEntity = o;
+
+}
+
+this.follow = function () {
+
+  if ( this.x < this.targetEntity.x && this.y < this.targetEntity.y ) {
+
+    this.move(64,64);
+
+
+}
+
+if ( this.x > this.targetEntity.x && this.y > this.targetEntity.y ) {
+
+  this.move(-64,-64);
+
+
+}
+
+}
+
 
 }
 }
@@ -203,6 +239,36 @@ function create() {
 
   background.render();
   player.render();
+
+    var  a = 0, b = 0;
+
+
+  for ( var s = 0; s < spelldef.length; s++ ) {
+
+
+
+
+  var spell = new object('canvas',a,64,64,64,'purple',spelldef[s],'yellow',spelldef[s]);
+
+
+
+              spell.render();
+
+  spells.push(spell);
+
+
+      a += 64;
+
+      if ( a >= window.innerWidth ) {
+
+          break;
+
+      }
+
+
+
+  }
+
 
 
 
@@ -248,8 +314,55 @@ function create() {
   }
 
 
-      window.onclick=function() {
+      window.onclick=function(e) {
           
+            for ( var s = 0; s < spelldef.length; s++ )
+
+            {
+
+                  var spell = spelldef[s];
+
+                  if ( e.clientX == spell.x && e.clientY == spell.y )
+
+
+                      {
+
+                            if ( spell.type == "FIRE" ) {
+
+
+                              var spellEffect = new object('canvas',player.x,player.y,64,64,'orange','FIREBALL','black',"fire_effect");
+
+
+                              index = getRandomInt(monsters.length);
+
+                              target(monsters[index]);
+
+                              setInterval(function() {
+
+                                      spellEffect.follow();
+                                          
+                                    if ( spellEffect.bounds(monsters[index]) )
+
+                                        {
+
+                                              monsters[index].health -= 25;
+
+
+                                                    player.energy -= 25;
+
+                                            clearInterval(this);
+
+                                        }
+
+
+                                  },100);
+
+
+                            }
+
+                      }
+
+            }
 
       }
       
@@ -410,6 +523,10 @@ function create() {
 function check2(index,array,x,y) {
 
 if (player.bounds(array[index]) )  {
+
+    if ( array[index].type == "monster")
+
+        player.health -= 25;
 
 
   array[index].move(x,y);
