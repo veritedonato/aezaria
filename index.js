@@ -682,10 +682,10 @@ setInterval(function () {
 
 
 
-  check(npcs,monsters,true);
-  check(monsters,npcs,true);
-  check(npcs,spells,false);
-  check(monsters,spells,false);
+  check(npcs,monsters);
+  check(monsters,npcs);
+  check(npcs,spells);
+  check(monsters,spells);
 
 
   
