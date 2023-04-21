@@ -19,11 +19,11 @@ this.h=h;
 this.tc=tc;
 this.type = type;
 
-this.clear =  function () {
+this.clear =  function (color) {
 
-  this.ctx.fillStyle="black";
+  this.ctx.fillStyle=color;
   this.ctx.fillRect(this.x,this.y,this.w,this.h);
-  this.ctx.fillStyle="black";
+  this.ctx.fillStyle=color;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 
@@ -96,7 +96,7 @@ this.move=function(x,y) {
 
 
 
-  this.clear();
+  this.clear("black");
 
 
 
@@ -120,6 +120,7 @@ var monsters = [];
 var npcs = [];
 var unitChance = 5;
 var monsterIndex = 0;
+var npcIndex = 0;
 var player;
 
 function getRandomInt(max) {
@@ -179,6 +180,8 @@ function create() {
 
 
       window.onclick=function() {
+          
+
       }
       
       window.onkeydown =function(e) {
@@ -187,15 +190,34 @@ function create() {
       
       player.move(-64,0);
 
-        for ( var m = 0 ; m < monsters.length; m++ )
+      for ( var m = 0 ; m < monsters.length; m++ )
 
-          if (player.bounds(monsters[m]) )  {
+      if (player.bounds(monsters[m]) )  {
 
-                player.move(64,0);
+            player.move(64,0);
 
-                monsters[m].render();
+            monsters[m].render();
 
-          }
+      }
+
+      for ( var m = 0 ; m < npcs.length; m++ )
+
+      if (player.bounds(npcs[m]) )  {
+
+
+        npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
+
+
+        player.move(64,0);
+
+
+          npcs[m].render();
+
+
+
+
+      }
+
 
       }
       if(e.keyCode==39) {
@@ -211,6 +233,25 @@ function create() {
           monsters[m].render();
 
       }
+
+      for ( var m = 0 ; m < npcs.length; m++ )
+
+      if (player.bounds(npcs[m]) )  {
+
+
+        npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
+
+
+        player.move(64,0);
+
+
+          npcs[m].render();
+
+
+
+
+      }
+
 
       
       }
@@ -230,6 +271,26 @@ function create() {
         }
   
 
+        for ( var m = 0 ; m < npcs.length; m++ )
+
+        if (player.bounds(npcs[m]) )  {
+  
+
+          
+         npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
+
+         npcs[m].render();
+
+  
+          player.move(64,0);
+  
+  
+ 
+  
+  
+        }
+    
+
       }
       if(e.keyCode==40) {
       
@@ -248,9 +309,30 @@ function create() {
 
       }
 
+      for ( var m = 0 ; m < npcs.length; m++ )
+
+      if (player.bounds(npcs[m]) )  {
+
+
+        npcs[m] = new object('canvas',npcs[m].x,npcs[m].y,64,64,'yellow','Quest','black',"quest");
+
+
+        player.move(64,0);
+
+
+          npcs[m].render();
+
+
+
+
+      }
+
       
       }
       
+
+
+
       }
 
 
@@ -263,9 +345,38 @@ setInterval(function () {
 
 
 
-  monsterIndex = getRandomInt(monsters.length);
+  npcIndex = getRandomInt(npcs.length);
 
   var chance =  getRandomInt(1000);
+
+  if ( chance < 250 ) {
+
+    npcs[npcIndex].move(0,-64);
+
+
+  }
+  if ( chance > 250 && chance < 500 ) {
+
+    npcs[npcIndex].move(0,64);
+
+
+  }
+  if ( chance > 500 && chance < 750 ) {
+
+    npcs[npcIndex].move(64,0);
+
+
+  }
+  if ( chance > 750 && chance < 1000 ) {
+
+    npcs[npcIndex].move(-64,0);
+
+
+  }
+
+  monsterIndex = getRandomInt(monsters.length);
+
+  chance =  getRandomInt(1000);
 
 
   if ( chance < 250 ) {
@@ -292,6 +403,21 @@ setInterval(function () {
 
       }
 
+      for ( var m = 0; m < npcs.length ; m++ ) {
+  
+  
+        if (monsters[monsterIndex].bounds(npcs[m]) )  {
+  
+  
+  
+          monsters[monsterIndex].move(0,64);
+    
+              monsters[monsterIndex].render();
+    
+    }
+  
+        }
+  
     if (player.bounds(monsters[monsterIndex]) )  {
 
 
@@ -325,6 +451,21 @@ setInterval(function () {
     }
   
         }
+
+        for ( var m = 0; m < npcs.length ; m++ ) {
+  
+  
+          if (monsters[monsterIndex].bounds(npcs[m]) )  {
+    
+    
+    
+            monsters[monsterIndex].move(0,64);
+      
+                monsters[monsterIndex].render();
+      
+      }
+    
+          }
   
 
       if (player.bounds(monsters[monsterIndex]) )  {
@@ -361,6 +502,22 @@ setInterval(function () {
     }
   
         }
+
+        
+        for ( var m = 0; m < npcs.length ; m++ ) {
+  
+  
+          if (monsters[monsterIndex].bounds(npcs[m]) )  {
+    
+    
+    
+            monsters[monsterIndex].move(0,64);
+      
+                monsters[monsterIndex].render();
+      
+      }
+    
+          }
   
 
       if (player.bounds(monsters[monsterIndex]) )  {
@@ -396,6 +553,21 @@ setInterval(function () {
   }
 
       }
+
+      for ( var m = 0; m < npcs.length ; m++ ) {
+  
+  
+        if (monsters[monsterIndex].bounds(npcs[m]) )  {
+  
+  
+  
+          monsters[monsterIndex].move(0,64);
+    
+              monsters[monsterIndex].render();
+    
+    }
+  
+        }
 
 
     if (player.bounds(monsters[monsterIndex]) )  {
