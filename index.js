@@ -90,6 +90,14 @@ this.clear =  function () {
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 
+if ( this.type != "background") {
+
+  this.ctx.fillStyle=bgcolor;
+  this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
+  
+        }
+  
+
     }
 
 }
@@ -113,7 +121,7 @@ this.ctx.fillText(this.t,this.x+10,this.y+10);
       if ( this.type != "background") {
 
 this.ctx.fillStyle=this.tc;
-this.ctx.fillText("Health: " + this.health,this.x+10,this.y+25);
+this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
 
       }
 
@@ -322,12 +330,16 @@ function create() {
 
                   var spell = spelldef[s];
 
-                  if ( e.clientX == spell.x && e.clientY == spell.y )
+                  if ( e.clientX < spell.x + 64 && e.clientX > spell.x - 64) {
+                  if ( e.clientY < spell.y + 64 && e.clientY > spell.y - 64)
 
 
                       {
 
+                            console.log(spell.type);
+
                             if ( spell.type == "FIRE" ) {
+
 
 
                               var spellEffect = new object('canvas',player.x,player.y,64,64,'orange','FIREBALL','black',"fire_effect");
@@ -358,7 +370,10 @@ function create() {
                                   },100);
 
 
+
                             }
+
+                          }
 
                       }
 
@@ -381,6 +396,20 @@ function create() {
             monsters[m].render();
 
       }
+
+      for ( var m = 0 ; m < spells.length; m++ )
+
+      if (player.bounds(spells[m]) )  {
+
+            player.move(64,0);
+
+
+            spells[m].render();
+
+ 
+
+      }
+
 
       for ( var m = 0 ; m < npcs.length; m++ )
 
@@ -415,6 +444,20 @@ function create() {
           monsters[m].render();
 
       }
+
+      for ( var m = 0 ; m < spells.length; m++ )
+
+      if (player.bounds(spells[m]) )  {
+
+            player.move(-64,0);
+
+
+            spells[m].render();
+
+ 
+
+      }
+
 
       for ( var m = 0 ; m < npcs.length; m++ )
 
@@ -452,7 +495,19 @@ function create() {
 
         }
   
+        for ( var m = 0 ; m < spells.length; m++ )
 
+        if (player.bounds(spells[m]) )  {
+  
+              player.move(0,64);
+  
+  
+              spells[m].render();
+  
+   
+  
+        }
+  
         for ( var m = 0 ; m < npcs.length; m++ )
 
         if (player.bounds(npcs[m]) )  {
@@ -486,6 +541,19 @@ function create() {
 
 
             monsters[m].render();
+
+ 
+
+      }
+
+      for ( var m = 0 ; m < spells.length; m++ )
+
+      if (player.bounds(spells[m]) )  {
+
+            player.move(0,-64);
+
+
+            spells[m].render();
 
  
 
@@ -538,9 +606,11 @@ if (player.bounds(array[index]) )  {
 
 }
 
-function check1(index,array1,array2,x,y,x2,y2) {
+function check1(index,array1,array2,x,y,x2,y2,move) {
 
-  array1[index].move(x,y);
+  if (move)
+
+    array1[index].move(x,y);
 
   for ( var m = 0; m < array2.length ; m++ ) {
 
@@ -559,7 +629,7 @@ function check1(index,array1,array2,x,y,x2,y2) {
 
 }
 
-function check(array,array2) {
+function check(array,array2,move) {
 
  index = getRandomInt(array.length);
 
@@ -571,8 +641,8 @@ function check(array,array2) {
 
 
 
-    check1(index, array,array2, 0, 64, 0, -64);
-    check1(index, array2,array, 0, 64, 0, -64);
+    check1(index, array,array2, 0, 64, 0, -64,move);
+    check1(index, array2,array, 0, 64, 0, -64,move);
 
     check2(index,array,0,-64);
 
@@ -580,8 +650,8 @@ function check(array,array2) {
   }
   if ( chance > 250 && chance < 500 ) {
 
-    check1(index, array, array2, 0, -64, 0, 64);
-    check1(index, array2, array, 0, -64, 0, 64);
+    check1(index, array, array2, 0, -64, 0, 64,move);
+    check1(index, array2, array, 0, -64, 0, 64,move);
 
     check2(index,array,0,64);
 
@@ -590,8 +660,8 @@ function check(array,array2) {
 
   if ( chance > 500 && chance < 750 ) {
 
-    check1(index, array,array2, 64,0, -64,0);
-    check1(index, array2,array, 64,0, -64,0);
+    check1(index, array,array2, 64,0, -64,0,move);
+    check1(index, array2,array, 64,0, -64,0,move);
 
     check2(index,array,-64,0);
 
@@ -599,8 +669,8 @@ function check(array,array2) {
   }
   if ( chance > 750 && chance < 1000 ) {
 
-    check1(index, array2,array, -64,0, 64,0);
-    check1(index, array,array2, -64,0, 64,0);
+    check1(index, array2,array, -64,0, 64,0,move);
+    check1(index, array,array2, -64,0, 64,0,move);
 
     check2(index,array,64,0);
 
@@ -616,7 +686,9 @@ setInterval(function () {
 
 
 
- check(npcs,monsters);
+  check(npcs,monsters,true);
+  check(npcs,spells,false);
+  check(monsters,spells,false);
 
 
   
