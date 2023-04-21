@@ -606,9 +606,8 @@ if (player.bounds(array[index]) )  {
 
 }
 
-function check1(index,array1,array2,x,y,x2,y2,move) {
+function check1(index,array1,array2,x,y,x2,y2) {
 
-  if (move)
 
     array1[index].move(x,y);
 
@@ -616,6 +615,8 @@ function check1(index,array1,array2,x,y,x2,y2,move) {
 
 
   if (array1[index].bounds(array2[m]) )  {
+
+
 
     array1[index].move(x2,y2);
 
@@ -626,10 +627,9 @@ function check1(index,array1,array2,x,y,x2,y2,move) {
   }
 
 
-
 }
 
-function check(array,array2,move) {
+function check(array,array2) {
 
  index = getRandomInt(array.length);
 
@@ -641,8 +641,7 @@ function check(array,array2,move) {
 
 
 
-    check1(index, array,array2, 0, 64, 0, -64,move);
-    check1(index, array2,array, 0, 64, 0, -64,move);
+    check1(index, array,array2, 0, 64, 0, -64);
 
     check2(index,array,0,-64);
 
@@ -650,8 +649,7 @@ function check(array,array2,move) {
   }
   if ( chance > 250 && chance < 500 ) {
 
-    check1(index, array, array2, 0, -64, 0, 64,move);
-    check1(index, array2, array, 0, -64, 0, 64,move);
+    check1(index, array, array2, 0, -64, 0, 64);
 
     check2(index,array,0,64);
 
@@ -660,8 +658,7 @@ function check(array,array2,move) {
 
   if ( chance > 500 && chance < 750 ) {
 
-    check1(index, array,array2, 64,0, -64,0,move);
-    check1(index, array2,array, 64,0, -64,0,move);
+    check1(index, array,array2, 64,0, -64,0);
 
     check2(index,array,-64,0);
 
@@ -669,8 +666,7 @@ function check(array,array2,move) {
   }
   if ( chance > 750 && chance < 1000 ) {
 
-    check1(index, array2,array, -64,0, 64,0,move);
-    check1(index, array,array2, -64,0, 64,0,move);
+    check1(index, array2,array, -64,0, 64,0);
 
     check2(index,array,64,0);
 
@@ -687,6 +683,7 @@ setInterval(function () {
 
 
   check(npcs,monsters,true);
+  check(monsters,npcs,true);
   check(npcs,spells,false);
   check(monsters,spells,false);
 
