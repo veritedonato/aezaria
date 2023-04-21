@@ -1,5 +1,3 @@
-var spelldef = ["FIRE","ICE","BOLT","STORM","SLEEP","FREEZE"];
-var spells = [];
 var monsters = [];
 var npcs = [];
 var unitChance = 5;
@@ -88,15 +86,11 @@ this.clear =  function () {
   this.ctx.fillRect(this.x,this.y,this.w,this.h);
   this.ctx.fillStyle=bgcolor;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
-
-
-if ( this.type != "background") {
-
   this.ctx.fillStyle=bgcolor;
   this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
-  
-        }
-  
+
+
+
 
     }
 
@@ -118,12 +112,52 @@ this.ctx.fillRect(this.x,this.y,this.w,this.h);
 this.ctx.fillStyle=this.tc;
 this.ctx.fillText(this.t,this.x+10,this.y+10);
 
-      if ( this.type != "background") {
 
-this.ctx.fillStyle=this.tc;
-this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
 
-      }
+
+
+  
+
+
+
+
+ if (this.type == "monster") {
+
+
+  this.ctx.fillStyle=this.tc;
+  this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
+
+
+
+}
+
+else if (this.type == "npc") {
+
+
+  this.ctx.fillStyle=this.tc;
+  this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
+
+
+
+}
+else if (this.type == "player") {
+
+
+  this.ctx.fillStyle=this.tc;
+  this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
+
+
+
+}
+
+else {
+
+  this.ctx.fillStyle=this.c;
+  this.ctx.fillText("Health: " + this.health,this.x,this.y+25);
+
+
+
+}
 
 
     }
@@ -246,31 +280,6 @@ function create() {
     var  a = 0, b = 0;
 
 
-  for ( var s = 0; s < spelldef.length; s++ ) {
-
-
-
-
-  var spell = new object('canvas',a,64,64,64,'purple',spelldef[s],'yellow',spelldef[s]);
-
-
-
-              spell.render();
-
-  spells.push(spell);
-
-
-      a += 64;
-
-      if ( a >= window.innerWidth ) {
-
-          break;
-
-      }
-
-
-
-  }
 
 
 
@@ -296,6 +305,8 @@ function create() {
   }
 
 
+  
+
   for ( var x = 0; x < window.innerWidth; x += 64 ) {
     for ( var y = 0; y < window.innerHeight; y += 64 ) {
 
@@ -317,64 +328,6 @@ function create() {
   }
 
 
-      window.onclick=function(e) {
-          
-            for ( var s = 0; s < spelldef.length; s++ )
-
-            {
-
-                  var spell = spelldef[s];
-
-                  if ( e.clientX < spell.x + 64 && e.clientX > spell.x - 64) {
-                  if ( e.clientY < spell.y + 64 && e.clientY > spell.y - 64)
-
-
-                      {
-
-                            console.log(spell.type);
-
-                            if ( spell.type == "FIRE" ) {
-
-
-
-                              var spellEffect = new object('canvas',player.x,player.y,64,64,'orange','FIREBALL','black',"fire_effect");
-
-
-                              index = getRandomInt(monsters.length);
-
-                              target(monsters[index]);
-
-                              setInterval(function() {
-
-                                      spellEffect.follow();
-                                          
-                                    if ( spellEffect.bounds(monsters[index]) )
-
-                                        {
-
-                                              monsters[index].health -= 25;
-
-
-                                                    player.energy -= 25;
-
-                                            clearInterval(this);
-
-                                        }
-
-
-                                  },100);
-
-
-
-                            }
-
-                          }
-
-                      }
-
-            }
-
-      }
       
       window.onkeydown =function(e) {
       
@@ -392,18 +345,6 @@ function create() {
 
       }
 
-      for ( var m = 0 ; m < spells.length; m++ )
-
-      if (player.bounds(spells[m]) )  {
-
-            player.move(64,0);
-
-
-            spells[m].render();
-
- 
-
-      }
 
 
       for ( var m = 0 ; m < npcs.length; m++ )
@@ -440,18 +381,6 @@ function create() {
 
       }
 
-      for ( var m = 0 ; m < spells.length; m++ )
-
-      if (player.bounds(spells[m]) )  {
-
-            player.move(-64,0);
-
-
-            spells[m].render();
-
- 
-
-      }
 
 
       for ( var m = 0 ; m < npcs.length; m++ )
@@ -490,18 +419,6 @@ function create() {
 
         }
   
-        for ( var m = 0 ; m < spells.length; m++ )
-
-        if (player.bounds(spells[m]) )  {
-  
-              player.move(0,64);
-  
-  
-              spells[m].render();
-  
-   
-  
-        }
   
         for ( var m = 0 ; m < npcs.length; m++ )
 
@@ -541,18 +458,6 @@ function create() {
 
       }
 
-      for ( var m = 0 ; m < spells.length; m++ )
-
-      if (player.bounds(spells[m]) )  {
-
-            player.move(0,-64);
-
-
-            spells[m].render();
-
- 
-
-      }
 
       for ( var m = 0 ; m < npcs.length; m++ )
 
@@ -588,10 +493,8 @@ function create() {
 
         check(npcs,monsters);
         check(monsters,npcs);
-        check(npcs,spells);
-        check(monsters,spells);
       
-      
+           
         
       
       },250);
@@ -600,6 +503,10 @@ function create() {
 }
 
 function check2(index,array,x,y) {
+
+  if ( !array[index] )
+
+      return;
 
 if (player.bounds(array[index]) )  {
 
@@ -619,10 +526,17 @@ if (player.bounds(array[index]) )  {
 
 function check1(index,array1,array2,x,y,x2,y2) {
 
+    if ( !array1[index] )
+
+        return;
 
    array1[index].move(x,y);
 
   for ( var m = 0; m < array2.length ; m++ ) {
+
+      if ( !array2[m] )
+
+          continue;
 
 
   if (array1[index].bounds(array2[m]) )  {
@@ -645,6 +559,7 @@ function check(array,array2) {
 
  index = getRandomInt(array.length);
 
+
   var chance =  getRandomInt(1000);
 
 
@@ -659,6 +574,7 @@ function check(array,array2) {
 
 
   }
+
   if ( chance > 250 && chance < 500 ) {
 
     check1(index, array, array2, 0, -64, 0, 64);
@@ -678,7 +594,7 @@ function check(array,array2) {
   }
   if ( chance > 750 && chance < 1000 ) {
 
-    check1(index, array2,array, -64,0, 64,0);
+    check1(index, array,array2, -64,0, 64,0);
 
     check2(index,array,64,0);
 
