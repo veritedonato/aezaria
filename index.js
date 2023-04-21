@@ -40,17 +40,30 @@ function getRandomInt(max) {
 function main() {
 
   var background = new object('canvas',0,0,window.innerWidth,window.innerHeight,'black','Welcome to Aezaria.','yellow');
-  var player = new object('canvas',250,250,64,64,'green','Player','yellow');
+  var player = new object('canvas',256,256,64,64,'green','Player','yellow');
 
   for ( var m = 0; m < numMonsters; m++ )
 
     {
 
+      for ( var x = 0; x < window.innerWidth; x += 64 ) {
+        for ( var y = 0; y < window.innerHeight; y += 64 ) {
 
-      var  x =  getRandomInt(window.innerWidth);
-      var  y =  getRandomInt(window.innerHeight);
+             var chance =  getRandomInt(1000);
 
-      var monster = new object('canvas',250,250,64,64,'green','Player','yellow');
+              if ( chance < 100 )  {
+
+      var monster = new object('canvas',x,y,64,64,'red','Monster','yellow');
+
+                  monster.render();
+
+      monsters.push(monster);
+
+              }
+
+        }
+
+      }
 
 
     }
@@ -60,4 +73,4 @@ function main() {
 
 }
 
-setInterval(main(), 100);
+setInterval(main(),100);
