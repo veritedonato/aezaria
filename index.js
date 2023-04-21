@@ -4,42 +4,7 @@ var unitChance = 5;
 var monsterIndex = 0;
 var index = 0;
 var player;
-var bgcolor = "black";
-
-function fire () {
-
-    player.energy -= 25;
-
-    index = getRandomInt(monsters.length);
-
-
-      var spell = new object('canvas',player.x,player.y,64,64,'purple','FIRE','yellow',"fire");
-
-    spell.target(monsters[index]);
-
-    setInterval(function () {
-
-
-        spell.follow();
-
-        if ( spell.bounds(monsters[index]) )
-
-            {
-
-                  monsters[index].health -= 25;
-
-
-                  if (monsters[index].health <= 0 )
-
-                        delete monsters[index];
-
-                clearInterval(this);
-
-            }
-
-    },100);
-
-}
+var background;
 
 
 class object {
@@ -60,8 +25,6 @@ this.w=w;
 this.h=h;
 this.tc=tc;
 this.type = type;
-this.bgcolor = "";
-this.background = "";
 this.targetEntity = null;
 this.health = 1000;
 this.energy = 1000;
@@ -115,7 +78,7 @@ this.clear =  function () {
     else {
 
 
-
+      var bgcolor = background.c;
 
   this.ctx.fillStyle=bgcolor;
   this.ctx.fillRect(this.x,this.y,this.w,this.h);
@@ -270,32 +233,11 @@ this.worldbounds();
 
 };
 
-this.target = function (o) {
-
-    this.targetEntity = o;
-
-}
-
-this.follow = function () {
-
-  if ( this.x < this.targetEntity.x && this.y < this.targetEntity.y ) {
-
-    this.move(64,64);
 
 
 }
 
-if ( this.x > this.targetEntity.x && this.y > this.targetEntity.y ) {
 
-  this.move(-64,-64);
-
-
-}
-
-}
-
-
-}
 }
 
 
@@ -306,7 +248,7 @@ function getRandomInt(max) {
 
 function create() {
 
-  var background = new object('canvas',0,0,window.innerWidth,window.innerHeight,bgcolor,'Welcome to Aezaria.','yellow',"background");
+  background = new object('canvas',0,0,window.innerWidth,window.innerHeight,"black",'Welcome to Aezaria.','yellow',"background");
   player = new object('canvas',256,256,64,64,'green','Player','yellow',"player");
 
   background.render();
@@ -545,15 +487,16 @@ function check2(index,array,x,y) {
 
 if (player.bounds(array[index]) )  {
 
-    if ( array[index].type == "monster")
-
-        player.health -= 25;
+    if ( array[index].type == "monster")  {
 
 
+ 
   array[index].move(x,y);
 
 
       player.render();
+
+}
 
 }
 
