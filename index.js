@@ -187,12 +187,7 @@ this.bounds = function (o) {
 this.move=function(x,y) {
 
 
-  if (this.x == undefined || this.y == undefined)
-
-      return;
-
   this.clear();
-
 
   
 
@@ -586,6 +581,22 @@ function create() {
       }
 
 
+      setInterval(function () {
+
+
+
+
+        check(npcs,monsters);
+        check(monsters,npcs);
+        check(npcs,spells);
+        check(monsters,spells);
+      
+      
+        
+      
+      },250);
+      
+
 }
 
 function check2(index,array,x,y) {
@@ -609,7 +620,7 @@ if (player.bounds(array[index]) )  {
 function check1(index,array1,array2,x,y,x2,y2) {
 
 
-    array1[index].move(x,y);
+   array1[index].move(x,y);
 
   for ( var m = 0; m < array2.length ; m++ ) {
 
@@ -630,6 +641,7 @@ function check1(index,array1,array2,x,y,x2,y2) {
 }
 
 function check(array,array2) {
+
 
  index = getRandomInt(array.length);
 
@@ -677,17 +689,3 @@ function check(array,array2) {
 }
 
 create();
-setInterval(function () {
-
-
-
-
-  check(npcs,monsters);
-  check(monsters,npcs);
-  check(npcs,spells);
-  check(monsters,spells);
-
-
-  
-
-},250);
