@@ -51,14 +51,13 @@ this.animate = function () { // context is the canvas 2d context.
 
 }
 
-this.loadResource = function (numFrames) {
+this.loadResource = function () {
 
   var img = new Image();
   img.onload = function () { // Triggered when image has finished loading.
       this.img_obj.source = img;  // we set the image source for our object.
   }
   img.src = this.img;
-  this.img_obj.total_frames = numFrames;
   this.img_obj.width = img.width;
   this.img_obj.height = img.height;
 
@@ -67,11 +66,11 @@ this.loadResource = function (numFrames) {
 }
 
 
-this.clear =  function (numFrames) {
+this.clear =  function () {
 
   if ( this.img )   {
 
-      loadResource(numFrames);
+      loadResource();
 
   }
 
@@ -90,11 +89,11 @@ this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 }
 
-this.render=function(numFrames) {
+this.render=function() {
 
   if ( this.img )   {
 
-    loadResource(numFrames);
+    loadResource();
 
 
   }
