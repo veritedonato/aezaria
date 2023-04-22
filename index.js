@@ -21,6 +21,7 @@ return document.getElementById(canvas).getContext('2d');
 };
 
 this.ctx=this.context(e);
+this.canvas = e;
 this.x=x;
 this.y=y;
 this.c=c;
@@ -32,35 +33,26 @@ this.type = type;
 this.targetEntity = null;
 this.health = 1000;
 this.energy = 1000;
+this.sprite = "";
 
 
+this.animate = function () {
 
 
+  this.spriteSheet.addObject(this.sprite, "", this.x, this.y, 0, false, false);
+
+}
 
 
 this.loadResource = function () {
 
- 
 
-  var img = new Image();
+    this.spriteSheet = new Spritesheet();
 
-  img.src = this.c;
+      this.spriteSheet.setUp(this.canvas,8);
+      
 
-  setInterval(function () {
-
-  img.onload = function () {
-  
-    console.log(img.src);
-
-      this.ctx.drawImage(img, current * 256, 0,
-        256, 256,
-        this.x, this.y, this.w, this.h);
-current = (current + 1) % 16;
-
-      }
-
-    },100);
-
+      this.spriteSheet.asyncload("spritesheets.xml", this.animate);
 
 
 
@@ -70,6 +62,10 @@ current = (current + 1) % 16;
 this.clear =  function () {
 
   if ( this.c.indexOf(".") >= 0 )   {
+
+      var tmp = this.c.split(".");
+
+      this.sprite = tmp[0];
 
       this.loadResource();
 

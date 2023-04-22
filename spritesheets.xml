@@ -1,0 +1,322 @@
+<spritesheets>
+ <spritesheet name="hero" src="hero.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster1" src="monster1.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster2" src="monster2.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster3" src="monster3.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster4" src="monster4.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster5" src="monster5.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster6" src="monster6.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+v <spritesheet name="monster7" src="monster7.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster8" src="monster8.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster9" src="monster9.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="monster10" src="monster10.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+   <spritesheet name="npc1" src="npc1.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="npc2" src="npc2.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="npc3" src="npc3.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="npc4" src="npc4.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+ <spritesheet name="npc5" src="npc5.png">
+    <frames>
+      <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+    </frames>
+  </spritesheet>
+</spritesheets>
