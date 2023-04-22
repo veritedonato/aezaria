@@ -733,7 +733,7 @@ this.sprite = "";
 this.animate = function () {
 
 
-  this.spriteSheet.addObject(this.sprite, "", this.x, this.y, 0, false, false);
+  this.spriteSheet.addObject(this.sprite, "State1", this.x, this.y, 0, false, false);
 
 }
 
