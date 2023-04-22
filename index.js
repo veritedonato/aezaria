@@ -46,6 +46,9 @@ this.loadResource = function () {
 
   img.src = this.c;
 
+  setInterval(function () {
+
+  img.onload = function () {
   
     console.log(img.src);
 
@@ -54,9 +57,9 @@ this.loadResource = function () {
         this.x, this.y, this.w, this.h);
 current = (current + 1) % 16;
 
+      }
 
-
-
+    },100);
 
 
 
