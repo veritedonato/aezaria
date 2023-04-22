@@ -1,322 +1,722 @@
 <spritesheets>
  <spritesheet name="hero" src="hero.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster1" src="monster1.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster2" src="monster2.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster3" src="monster3.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster4" src="monster4.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster5" src="monster5.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster6" src="monster6.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
-v <spritesheet name="monster7" src="monster7.png">
+ <spritesheet name="monster7" src="monster7.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster8" src="monster8.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster9" src="monster9.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="monster10" src="monster10.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
    <spritesheet name="npc1" src="npc1.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
- <spritesheet name="npc2" src="npc2.png">
+   <spritesheet name="npc2" src="npc2.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="npc3" src="npc3.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="npc4" src="npc4.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
  <spritesheet name="npc5" src="npc5.png">
+       <states>
+      <state name="State1">
+        <layer name="Layer1"></layer>
+      </state>
+    </states>
+    <layers>
+       <layer name="Layer1" x="0" y="0">
+        <frame name="Frame1"></frame>
+        <frame name="Frame2"></frame>
+        <frame name="Frame3"></frame>
+        <frame name="Frame4"></frame>
+        <frame name="Frame5"></frame>
+        <frame name="Frame6"></frame>
+        <frame name="Frame7"></frame>
+        <frame name="Frame8"></frame>
+        <frame name="Frame9"></frame>
+        <frame name="Frame10"></frame>
+        <frame name="Frame11"></frame>
+        <frame name="Frame12"></frame>
+        <frame name="Frame13"></frame>
+        <frame name="Frame14"></frame>
+        <frame name="Frame15"></frame>
+        <frame name="Frame16"></frame>
+      </layer>
+    </layers>
     <frames>
       <frame name="Frame1" x="0" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="0" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="64" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="128" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="0" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="64" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="128" y="192" w="64" h="64" t="8"></frame>
-      <frame name="Frame1" x="192" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame2" x="64" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame3" x="128" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame4" x="192" y="0" w="64" h="64" t="8"></frame>
+      <frame name="Frame5" x="0" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame6" x="64" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame7" x="128" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame8" x="192" y="64" w="64" h="64" t="8"></frame>
+      <frame name="Frame9" x="0" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame10" x="64" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame11" x="128" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame12" x="192" y="128" w="64" h="64" t="8"></frame>
+      <frame name="Frame13" x="0" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame14" x="64" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame15" x="128" y="192" w="64" h="64" t="8"></frame>
+      <frame name="Frame16" x="192" y="192" w="64" h="64" t="8"></frame>
     </frames>
   </spritesheet>
 </spritesheets>
