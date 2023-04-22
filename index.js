@@ -6,9 +6,13 @@ var index = 0;
 var player;
 var background;
 
+var current = 0;
+
+
+
 
 class object {
-constructor(e,x,y,w,h,c,t,tc,type,img) {
+constructor(e,x,y,w,h,c,t,tc,type) {
 
 this.context=function(canvas) {
 
@@ -29,49 +33,42 @@ this.targetEntity = null;
 this.health = 1000;
 this.energy = 1000;
 
-this.img_obj = {
-  'source': null,
-  'current': 0,
-  'total_frames': 16,
-  'width': 16,
-  'height': 16
-};
 
 
-this.animate = function () { // context is the canvas 2d context.
 
-  var iobj = this.img_obj;
-  
-      if (iobj.source != null)
-          this.ctx.drawImage(iobj.source, iobj.current * iobj.width, 0,
-                            iobj.width, iobj.height,
-                            this.x, this.y, this.w, this.h);
-      iobj.current = (iobj.current + 1) % iobj.total_frames;
-                     // incrementing the current frame and assuring animation loop
- 
 
-}
 
 this.loadResource = function () {
 
-  var img = new Image();
-  img.onload = function () { // Triggered when image has finished loading.
-      this.img_obj.source = img;  // we set the image source for our object.
-  }
-  img.src = this.img;
-  this.img_obj.width = img.width;
-  this.img_obj.height = img.height;
+ 
 
-  setInterval(this.animate,100);
+  var img = new Image();
+
+  img.src = this.c;
+
+  
+    console.log(img.src);
+
+      this.ctx.drawImage(img, current * 256, 0,
+        256, 256,
+        this.x, this.y, this.w, this.h);
+current = (current + 1) % 16;
+
+
+
+
+
+
+
 
 }
 
 
 this.clear =  function () {
 
-  if ( this.img )   {
+  if ( this.c.indexOf(".") >= 0 )   {
 
-      loadResource();
+      this.loadResource();
 
   }
 
@@ -96,14 +93,13 @@ this.ctx.fillText(this.t,this.x+10,this.y+10);
 
 this.render=function() {
 
-  if ( this.img )   {
+  if ( this.c.indexOf(".") >= 0 )   {
 
-    loadResource();
+    this.loadResource();
 
+}
 
-  }
-
-    else {
+  else {
 
   this.ctx.fillStyle=this.c;
 this.ctx.fillRect(this.x,this.y,this.w,this.h);
@@ -249,7 +245,7 @@ function getRandomInt(max) {
 function create() {
 
   background = new object('canvas',0,0,window.innerWidth,window.innerHeight,"black",'Welcome to Aezaria.','yellow',"background");
-  player = new object('canvas',256,256,64,64,'green','Player','yellow',"player");
+  player = new object('canvas',256,256,64,64,'hero.png','Player','yellow',"player");
 
   background.render();
   player.render();
